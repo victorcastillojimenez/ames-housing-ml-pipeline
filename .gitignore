@@ -1,0 +1,33 @@
+# Entorno virtual
+env/
+venv/
+.venv/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+
+# Modelos entrenados (regenerables con orchestrator.py)
+outputs/models/
+
+# Datasets grandes de preprocesamiento (regenerables con orchestrator.py)
+outputs/X_train*.csv
+outputs/X_test*.csv
+outputs/02_eda_report.json
+
+# Memoria técnica generada (~1 GB; regenerable con orchestrator.py)
+outputs/MEMORIA_TECNICA.docx
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,79 @@
+{
+  "pipeline_summary": {
+    "total_time_s": 7004.76,
+    "reoptimization_cycles": 1,
+    "best_model": "XGBoost",
+    "final_r2": 0.8837,
+    "final_rmse": 19931.83,
+    "model_approved": false,
+    "validation_passed": true,
+    "validation_checks": "4/4",
+    "timestamp": "2026-04-01T15:41:26.201788"
+  },
+  "agent_events": [
+    {
+      "timestamp": "2026-04-01T13:44:41.438427",
+      "agent": "Business Architect",
+      "event": "Contexto de negocio generado",
+      "status": "✅ OK",
+      "elapsed_s": 0.0
+    },
+    {
+      "timestamp": "2026-04-01T13:45:39.576025",
+      "agent": "Data Scientist",
+      "event": "EDA y preprocesamiento completados",
+      "status": "✅ OK",
+      "elapsed_s": 58.14
+    },
+    {
+      "timestamp": "2026-04-01T14:43:41.296685",
+      "agent": "ML Engineer",
+      "event": "Entrenamiento completado (Ciclo 1/2)",
+      "status": "✅ OK",
+      "elapsed_s": 3481.72
+    },
+    {
+      "timestamp": "2026-04-01T14:43:47.783599",
+      "agent": "Quality & Performance Analyst",
+      "event": "Auditoría completada (Ciclo 1/2)",
+      "status": "✅ OK",
+      "elapsed_s": 6.49
+    },
+    {
+      "timestamp": "2026-04-01T15:41:21.004879",
+      "agent": "ML Engineer",
+      "event": "Entrenamiento completado (Ciclo 2/2)",
+      "status": "✅ OK",
+      "elapsed_s": 3453.22
+    },
+    {
+      "timestamp": "2026-04-01T15:41:24.802403",
+      "agent": "Quality & Performance Analyst",
+      "event": "Auditoría completada (Ciclo 2/2)",
+      "status": "✅ OK",
+      "elapsed_s": 3.8
+    },
+    {
+      "timestamp": "2026-04-01T15:41:26.012088",
+      "agent": "Technical Writer",
+      "event": "ERROR: [Errno 13] Permission denied: 'outputs\\\\MEMORIA_TECNICA.docx'",
+      "status": "❌ FAIL",
+      "elapsed_s": 0.0
+    },
+    {
+      "timestamp": "2026-04-01T15:41:26.198286",
+      "agent": "Validator",
+      "event": "Checklist de calidad: 4/4 superados",
+      "status": "✅ OK",
+      "elapsed_s": 0.18
+    }
+  ],
+  "deliverables": {},
+  "validation_report": {
+    "timestamp": "2026-04-01T15:41:26.013981",
+    "total_checks": 4,
+    "passed": 4,
+    "failed": 0,
+    "all_passed": true
+  }
+}

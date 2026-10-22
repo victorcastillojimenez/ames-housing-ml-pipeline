@@ -1,0 +1,121 @@
+{
+  "approved": false,
+  "needs_reoptimization": true,
+  "reasons": [
+    "Overfitting excesivo: 0.0874 > 0.05"
+  ],
+  "best_model_name": "XGBoost",
+  "best_r2_test": 0.8837,
+  "best_rmse_test": 19931.83,
+  "timestamp": "2026-04-01T15:41:24.767741",
+  "metrics_table": [
+    {
+      "model_name": "LinearRegression",
+      "r2_train": 0.9841,
+      "r2_test": 0.8729,
+      "r2_cv_mean": 0.8752,
+      "r2_cv_std": 0.0182,
+      "rmse_test": 22267.22,
+      "mae_test": 14854.78,
+      "train_time_s": 0.47,
+      "overfitting": 0.1112,
+      "tipo": "optimizado",
+      "best_params": {
+        "alpha": 483.2930238571752
+      },
+      "optimization_time_s": 59.82
+    },
+    {
+      "model_name": "DecisionTree",
+      "r2_train": 0.9509,
+      "r2_test": 0.7427,
+      "r2_cv_mean": 0.7702,
+      "r2_cv_std": 0.0154,
+      "rmse_test": 32664.1,
+      "mae_test": 22086.0,
+      "train_time_s": 0.3,
+      "overfitting": 0.2082,
+      "tipo": "optimizado",
+      "best_params": {
+        "min_samples_split": 10,
+        "min_samples_leaf": 4,
+        "max_depth": 12
+      },
+      "optimization_time_s": 17.27
+    },
+    {
+      "model_name": "RandomForest",
+      "r2_train": 0.9792,
+      "r2_test": 0.847,
+      "r2_cv_mean": 0.8472,
+      "r2_cv_std": 0.0227,
+      "rmse_test": 24950.81,
+      "mae_test": 15716.27,
+      "train_time_s": 2.06,
+      "overfitting": 0.1322,
+      "tipo": "optimizado",
+      "best_params": {
+        "n_estimators": 100,
+        "min_samples_split": 2,
+        "max_features": "sqrt",
+        "max_depth": null
+      },
+      "optimization_time_s": 54.33
+    },
+    {
+      "model_name": "GradientBoosting",
+      "r2_train": 0.9911,
+      "r2_test": 0.8758,
+      "r2_cv_mean": 0.901,
+      "r2_cv_std": 0.0143,
+      "rmse_test": 21181.88,
+      "mae_test": 13923.57,
+      "train_time_s": 15.25,
+      "overfitting": 0.1153,
+      "tipo": "optimizado",
+      "best_params": {
+        "subsample": 0.8,
+        "n_estimators": 200,
+        "max_depth": 5,
+        "learning_rate": 0.15
+      },
+      "optimization_time_s": 206.0
+    },
+    {
+      "model_name": "XGBoost",
+      "r2_train": 0.9711,
+      "r2_test": 0.8837,
+      "r2_cv_mean": 0.9044,
+      "r2_cv_std": 0.0178,
+      "rmse_test": 19931.83,
+      "mae_test": 12992.87,
+      "train_time_s": 42.72,
+      "overfitting": 0.0874,
+      "tipo": "optimizado",
+      "best_params": {
+        "subsample": 0.7,
+        "n_estimators": 300,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.6
+      },
+      "optimization_time_s": 752.66
+    },
+    {
+      "model_name": "StackingEnsemble",
+      "r2_train": 0.9914,
+      "r2_test": 0.8561,
+      "r2_cv_mean": 0.8873,
+      "r2_cv_std": 0.0152,
+      "rmse_test": 22532.53,
+      "mae_test": 15263.25,
+      "train_time_s": 149.67,
+      "overfitting": 0.1352,
+      "tipo": "optimizado",
+      "best_params": {
+        "config": "Default Base Stacking"
+      },
+      "optimization_time_s": 150.72
+    }
+  ]
+}

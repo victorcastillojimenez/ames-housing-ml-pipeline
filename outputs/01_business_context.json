@@ -1,0 +1,48 @@
+{
+  "empresa": "Ames Insights Consulting",
+  "lema": "Data-Driven Decisions for the Future of Real Estate",
+  "objetivo_negocio": "Desarrollar un modelo predictivo de precios de vivienda para el mercado de Ames, Iowa, que permita a fondos de inversión, bancos hipotecarios y empresas PropTech obtener valoraciones automáticas con error inferior al 10 % del precio real.",
+  "stakeholders": [
+    "Gestores de Fondos Inmobiliarios (REITs)",
+    "Bancos Hipotecarios",
+    "Empresas PropTech"
+  ],
+  "impacto_economico": "Ahorro Estructural: Un error del 5 % en una propiedad de $300,000 equivale a $15,000 de riesgo directo. Reemplazar una tasación manual tradicional ($400/unidad) por nuestra inferencia algorítmica ($0.10/unidad) generaría un impacto directo de ~$4 millones anuales para un portfolio de 10,000 operaciones, acelerando además la aprobación hipotecaria de semanas a minutos.",
+  "contexto_macroeconomico": [
+    {
+      "nombre": "Resiliencia ante la Gran Recesión (2008)",
+      "descripcion": "El dataset registra ventas entre 2006 y 2010. A diferencia de las caídas catastróficas del 30-50% en zonas costeras, el mercado de Middle America (Ames) demostró alta resiliencia. El inversor debe notar esta estabilidad como mitigador de riesgo sistemático."
+    },
+    {
+      "nombre": "Limitación de Inflación",
+      "descripcion": "El modelo no contempla la inflación posterior a 2010. Para despliegues en producción de grado institucional, proponemos integrar el Índice de Precios de Vivienda (HPI) actual como multiplicador macro al output nominal del algoritmo."
+    }
+  ],
+  "riesgos_identificados": [
+    {
+      "nombre": "Valores Atípicos (Outliers)",
+      "descripcion": "Propiedades de lujo con características únicas pueden sesgar el modelo. Acción: detectar y gestionar outliers en SalePrice."
+    },
+    {
+      "nombre": "Multicolinealidad",
+      "descripcion": "Variables como 'GrLivArea' y 'TotRmsAbvGrd' están altamente correlacionadas. Acción: análisis VIF y selección de features."
+    },
+    {
+      "nombre": "Datos Faltantes",
+      "descripcion": "Múltiples columnas tienen valores nulos (Pool, Garage, Basement). Acción: estrategia de imputación documentada y justificada."
+    },
+    {
+      "nombre": "Distribución Sesgada del Target",
+      "descripcion": "SalePrice tiene sesgo positivo. Acción: aplicar transformación logarítmica para mejorar la normalidad y el desempeño del modelo."
+    }
+  ],
+  "kpis_exito": {
+    "R2_minimo": 0.85,
+    "RMSE_maximo": 25000,
+    "MAE_maximo": 18000,
+    "umbral_overfitting": 0.05
+  },
+  "dataset_id": 41211,
+  "target_variable": "SalePrice",
+  "timestamp": "2026-04-01T13:44:41.435422"
+}
